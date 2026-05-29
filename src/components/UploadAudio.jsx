@@ -138,12 +138,12 @@ function UploadAudio() {
                             </p>
 
                             <p>{item.transcript}</p>
-                            <audio controls>
-                                <source
-                                    src={`http://localhost:8080/uploads/${item.fileName}`}
-                                    type="audio/mpeg"
-                                />
-                            </audio>
+                           <audio controls>
+                               <source
+                                   src={item.filePath}
+                                   type="audio/mpeg"
+                               />
+                           </audio>
 
                             <p>
                                 <strong>Uploaded:</strong>{" "}
